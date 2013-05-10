@@ -12,10 +12,8 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
-gem 'sqlite3', :group => [:development, :test]
-group :production do
-  gem 'thin'
-  gem 'pg'
+group :development do
+  gem 'sqlite3', '1.3.7'
 end
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -25,6 +23,10 @@ end
 end
 
 gem 'jquery-rails'
+
+group :production do
+  gem 'pg', '0.15.1'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
