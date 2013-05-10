@@ -14,6 +14,13 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
+group :production do
+	gem 'pg', '0.12.2'
+end
+group :development do
+	gem 'sqlite3', '1.3.4'
+end
+
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
@@ -36,9 +43,3 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-group :production do
-	gem 'pg', '1.12.2'
-end
-group :development, :test do
-	gem 'sqlite3', '1.3.4'
-end
