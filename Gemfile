@@ -12,7 +12,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
-group :development do
+group :development, :test do
   gem 'sqlite3', '1.3.7'
 end
 
